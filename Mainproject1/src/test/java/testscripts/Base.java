@@ -25,7 +25,7 @@ public class Base {
   public WebDriver driver;
 	
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")
 	
 public void initialisebrowser(String browser) throws Exception 

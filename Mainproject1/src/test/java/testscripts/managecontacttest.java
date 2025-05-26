@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constants;
 import page.Homepage;
 import page.Loginpage;
 import page.Managecontactpage;
@@ -21,6 +22,6 @@ public class managecontacttest extends Base {
 		 Managecontactpage contact=new  Managecontactpage(driver);
 		 contact.contactupdate();
 		boolean alertpresent= contact.alertpresent();
-		Assert.assertTrue(alertpresent,"not aleret present");
+		Assert.assertTrue(alertpresent,Constants.MANAGECONTACT);
   }
 }

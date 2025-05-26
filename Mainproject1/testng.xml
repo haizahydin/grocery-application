@@ -10,7 +10,13 @@
 	 </listeners>
 	 
 		<classes>
+		
 			<class name="testscripts.Categorytest"></class>
+			<class name="testscripts.Foottexttest"></class>
+			<class name="testscripts.Logintest"></class>
+			<class name="testscripts.managecontacttest"></class>
+			<class name="testscripts.Managenews"></class>
+			
 			
 		</classes>
 	

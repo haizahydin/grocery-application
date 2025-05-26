@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constants;
 import page.Category;
 import page.Homepage;
 import page.Loginpage;
@@ -24,7 +25,7 @@ public class Categorytest extends Base
 	  Category create=new Category(driver);
 	  create.categoryactions("phones");
 	  boolean categorycreated=create.savealertpresent();
-	  Assert.assertTrue(categorycreated,"creationfailed");
+	  Assert.assertTrue(categorycreated,Constants.CATEGORY_CREATION);
   }  
 @Test	  
   public void edit() throws IOException
@@ -36,7 +37,7 @@ public class Categorytest extends Base
 	  Category create=new Category(driver);
 	  create.editcategory();
 	 boolean alertpresent=create.imagedeletedalertpresent();
-	 Assert.assertTrue(alertpresent,"notpresent");
+	 Assert.assertTrue(alertpresent,Constants.CATEGORY_EDIT);
 	 create.update();
 	 
   }
@@ -49,6 +50,8 @@ Homepage homepage=new Homepage(driver);
 homepage.clickonmanagecategory(); 
 Category create=new Category(driver);
 create.statusedit();
+boolean alertpresent=create.statusapdate();
+Assert.assertTrue(alertpresent,Constants.CATEGORY_STATUSUPDATE);
 }
 @Test
 public void elementsearchs() throws IOException
@@ -59,7 +62,7 @@ public void elementsearchs() throws IOException
 	homepage.clickonmanagecategory(); 
 	Category create=new Category(driver);
 	boolean present=create.search("toys");
-	Assert.assertTrue(present,"not product found");
+	Assert.assertTrue(present,Constants.CATEGORY_SEARCH);
 	
 }
 @Test
@@ -71,7 +74,7 @@ public void elementsearchfornotfoundelement() throws IOException
 	homepage.clickonmanagecategory(); 
 	Category create=new Category(driver);
 	boolean present=create.search("lipstick");
-	Assert.assertFalse(false,"present");
+	Assert.assertFalse(false,Constants.CATEGORY_NOTELEMENTSEARCH);
 	
 }
 }

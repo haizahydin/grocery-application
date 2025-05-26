@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constants;
 import page.Homepage;
 import page.Loginpage;
 import page.Managefoottexterpage;
@@ -19,6 +20,6 @@ public class Foottexttest extends Base{
 		 Managefoottexterpage foottext=new Managefoottexterpage(driver);
 		 foottext.foottexter();
 		boolean alertpresent= foottext.alert();
-		 Assert.assertTrue(alertpresent,"notpresent");
+		 Assert.assertTrue(alertpresent,Constants.FOOTTEXT_FOOTTEXTALERT);
   }
 }

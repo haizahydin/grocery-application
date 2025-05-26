@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import constants.Constants;
 import utilities.Fileuploadutility;
 import utilities.Generalutilities;
 
@@ -36,6 +37,7 @@ Generalutilities general=new Generalutilities();
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement deletealertpresent;
 	@FindBy(xpath="//button[@name='update']")WebElement update;
 	@FindBy(xpath="//span[text()='Active']")WebElement status;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertafteredit;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")WebElement search;
 	@FindBy(xpath="//input[@placeholder='Category']")WebElement categoryname;
 	@FindBy(xpath="//button[@name='Search']")WebElement searchbuttonafterentername;
@@ -49,7 +51,7 @@ public void categoryactions(String categoryname) throws AWTException
 	newbutton.click();
 	categoryfield.sendKeys(categoryname+general.generateCurrentDateAndTime());
 	discound.click();
-	String filepath="C:\\Users\\User\\eclipse-workspace\\Mainproject1\\src\\test\\resources\\categoryimage\\phoneimage.jfif";
+	String filepath=Constants.CATEGORY_IMAGE;
 obj.fileuploadingusingsend(filechoosing,filepath);
 
 //showontop.click();
@@ -81,6 +83,10 @@ general.clickJavaScriptExecutor(update, driver);
 public void statusedit()
 {
 	status.click();	
+}
+public boolean statusapdate()
+{
+	return alertafteredit.isDisplayed();
 }
 //table
 public boolean search(String input)

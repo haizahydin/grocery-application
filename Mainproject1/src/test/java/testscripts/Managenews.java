@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constants;
 import page.Homepage;
 import page.Loginpage;
 import page.Managenewspage;
@@ -20,7 +21,7 @@ public class Managenews extends Base {
 		Managenewspage managenews=new Managenewspage(driver);
 		managenews.managenews();
 		boolean present=managenews.alertpresent();
-		Assert.assertTrue(present, "notpresent");
+		Assert.assertTrue(present,Constants.MANAGENEWS_ADDING);
 		
   }
   @Test
@@ -32,8 +33,8 @@ public class Managenews extends Base {
 		homepage.managenews();
 		Managenewspage managenews=new Managenewspage(driver);
 		managenews.delete();
-		managenews.alertpresentafterdelete();
-		
+		boolean alert=managenews.alertpresentafterdelete();
+		Assert.assertTrue(alert,Constants.MANAGENEWS_DELETE);
   }
   @Test
   public void search() throws IOException
@@ -45,6 +46,6 @@ public class Managenews extends Base {
 		Managenewspage managenews=new Managenewspage(driver);
 		managenews.searchnews("hello");
 		boolean presentnews=managenews.searchnews("hello");
-		Assert.assertTrue(presentnews, "not found");
+		Assert.assertTrue(presentnews,Constants.MANAGENEWS_SEARCH);
   }
 }

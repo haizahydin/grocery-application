@@ -8,6 +8,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import constants.Constants;
+
 public class Excelread
 {
 	static FileInputStream f;
@@ -15,7 +17,7 @@ public class Excelread
 	static XSSFSheet sh;
 public static String readStringData(int row,int colom,String sheet) throws IOException 
 {
-	f=new FileInputStream("C:\\Users\\User\\eclipse-workspace\\Mainproject1\\src\\test\\resources\\7rmart\\GroceryApp.xlsx");
+	f=new FileInputStream(Constants.LOGINEXCELFILEPATH);
 	w=new XSSFWorkbook(f);
 	sh=w.getSheet(sheet);
 	XSSFRow r=sh.getRow(row);
@@ -24,7 +26,7 @@ public static String readStringData(int row,int colom,String sheet) throws IOExc
 }
 public static String readIntegerData(int row,int colom,String sheet) throws IOException
 {
-	f=new FileInputStream("C:\\Users\\User\\eclipse-workspace\\Mainproject1\\src\\test\\resources\\7rmart\\GroceryApp.xlsx");
+	f=new FileInputStream(Constants.LOGINEXCELFILEPATH);
 	w=new XSSFWorkbook(f);
 	sh=w.getSheet(sheet);
 	XSSFRow r=sh.getRow(row);
