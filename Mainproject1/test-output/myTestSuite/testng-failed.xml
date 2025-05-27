@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [myTestSuite]">
+  <parameter name="browser" value="Chrome"/>
   <listeners>
     <listener class-name="liseners.Liseners"/>
     <listener class-name="liseners.RetryListener"/>
   </listeners>
   <test thread-count="5" name="myTest(failed)">
     <classes>
-      <class name="testscripts.Categorytest">
+      <class name="testscripts.Logintest">
         <methods>
-          <include name="edit"/>
+          <include name="verifyuserloginwithvalidcreditions"/>
           <include name="initialisebrowser"/>
           <include name="driverQuit"/>
         </methods>
-      </class> <!-- testscripts.Categorytest -->
+      </class> <!-- testscripts.Logintest -->
     </classes>
   </test> <!-- myTest(failed) -->
 </suite> <!-- Failed suite [myTestSuite] -->

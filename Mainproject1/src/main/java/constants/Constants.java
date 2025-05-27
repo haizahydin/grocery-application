@@ -2,7 +2,7 @@ package constants;
 
 public class Constants //to give path
 {
-	public static final String CONFIGFILE=System.getProperty("user.dir")+"\\src\\main\\resources\\Config.properties";
+	public static final String CONFIGFILE=System.getProperty("user.dir")+"\\src\\main\\resources\\config.properties";
 
 	public static final String VERIFYLOGINWITHVALIDCREDENTIOL="loginfailed";
 	public static final String CATEGORY_CREATION="creationfailed";
@@ -22,8 +22,8 @@ public class Constants //to give path
 	public static final String MANAGENEWS_SEARCH="not found";
 	
 
-	public static final String CATEGORY_IMAGE=System.getProperty("user.dir")+"C:\\Users\\User\\git\\grocery-application\\Mainproject1\\src\\test\\resources\\categoryimage\\phoneimage.jfif";
-	public static final String LOGINEXCELFILEPATH=System.getProperty("user.dir")+"C:\\Users\\User\\eclipse-workspace\\Mainproject1\\src\\test\\resources\\7rmart\\GroceryApp.xlsx";
+	public static final String CATEGORY_IMAGE=System.getProperty("user.dir")+"\\src\\test\\resources\\categoryimage\\phoneimage.jfif";
+	public static final String LOGINEXCELFILEPATH=System.getProperty("user.dir")+"\\src\\test\\resources\\7rmart\\GroceryApp.xlsx";
 }
 
 //user.dir used to give path up to get grocrry application.

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="3" failed="6" skipped="0">
+<testng-results retried="1" ignored="1" total="6" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-26T19:22:42 IST" name="parallel tesing" finished-at="2025-05-26T19:23:59 IST" duration-ms="77635">
+  <suite started-at="2025-05-27T12:48:50 IST" name="myTestSuite" finished-at="2025-05-27T12:50:31 IST" duration-ms="101335">
     <groups>
     </groups>
-    <test started-at="2025-05-26T19:22:42 IST" name="test1" finished-at="2025-05-26T19:23:50 IST" duration-ms="68377">
+    <test started-at="2025-05-27T12:48:50 IST" name="myTest" finished-at="2025-05-27T12:50:31 IST" duration-ms="101335">
       <class name="testscripts.Logintest">
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:22:42 IST" name="initialisebrowser" finished-at="2025-05-26T19:22:54 IST" duration-ms="12044" status="PASS">
+        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:48:50 IST" name="initialisebrowser" finished-at="2025-05-27T12:49:07 IST" duration-ms="17038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisebrowser -->
-        <test-method signature="invalidpasswordcrctusername()[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:22:54 IST" name="invalidpasswordcrctusername" finished-at="2025-05-26T19:22:57 IST" duration-ms="2808" status="PASS">
+        <test-method signature="invalidpasswordcrctusername()[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:07 IST" name="invalidpasswordcrctusername" finished-at="2025-05-27T12:49:10 IST" duration-ms="2939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidpasswordcrctusername -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:22:57 IST" name="driverQuit" finished-at="2025-05-26T19:22:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:10 IST" name="driverQuit" finished-at="2025-05-27T12:49:10 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidpasswordcrctusername status=SUCCESS method=Logintest.invalidpasswordcrctusername()[pri:0, instance:testscripts.Logintest@34a3d150] output={null}]]]>
+                <![CDATA[[TestResult name=invalidpasswordcrctusername status=SUCCESS method=Logintest.invalidpasswordcrctusername()[pri:0, instance:testscripts.Logintest@782859e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:22:57 IST" name="initialisebrowser" finished-at="2025-05-26T19:23:13 IST" duration-ms="16188" status="PASS">
+        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:10 IST" name="initialisebrowser" finished-at="2025-05-27T12:49:21 IST" duration-ms="10909" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,22 +44,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisebrowser -->
-        <test-method signature="validincrctpassincrtusername()[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:13 IST" name="validincrctpassincrtusername" finished-at="2025-05-26T19:23:14 IST" duration-ms="1327" status="PASS">
+        <test-method signature="validincrctpassincrtusername()[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:21 IST" name="validincrctpassincrtusername" finished-at="2025-05-27T12:49:24 IST" duration-ms="2544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validincrctpassincrtusername -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:14 IST" name="driverQuit" finished-at="2025-05-26T19:23:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:24 IST" name="driverQuit" finished-at="2025-05-27T12:49:24 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validincrctpassincrtusername status=SUCCESS method=Logintest.validincrctpassincrtusername()[pri:0, instance:testscripts.Logintest@34a3d150] output={null}]]]>
+                <![CDATA[[TestResult name=validincrctpassincrtusername status=SUCCESS method=Logintest.validincrctpassincrtusername()[pri:0, instance:testscripts.Logintest@782859e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:14 IST" name="initialisebrowser" finished-at="2025-05-26T19:23:37 IST" duration-ms="23225" status="PASS">
+        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:24 IST" name="initialisebrowser" finished-at="2025-05-27T12:49:35 IST" duration-ms="11573" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,22 +70,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisebrowser -->
-        <test-method signature="validpassincrtusername()[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:37 IST" name="validpassincrtusername" finished-at="2025-05-26T19:23:39 IST" duration-ms="1864" status="PASS">
+        <test-method signature="validpassincrtusername()[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:35 IST" name="validpassincrtusername" finished-at="2025-05-27T12:49:37 IST" duration-ms="2220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validpassincrtusername -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:39 IST" name="driverQuit" finished-at="2025-05-26T19:23:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:37 IST" name="driverQuit" finished-at="2025-05-27T12:49:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validpassincrtusername status=SUCCESS method=Logintest.validpassincrtusername()[pri:0, instance:testscripts.Logintest@34a3d150] output={null}]]]>
+                <![CDATA[[TestResult name=validpassincrtusername status=SUCCESS method=Logintest.validpassincrtusername()[pri:0, instance:testscripts.Logintest@782859e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:39 IST" name="initialisebrowser" finished-at="2025-05-26T19:23:50 IST" duration-ms="10411" status="PASS">
+        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:49:37 IST" name="initialisebrowser" finished-at="2025-05-27T12:50:01 IST" duration-ms="23983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,19 +96,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisebrowser -->
-        <test-method signature="verifyuserloginwithvalidcreditions()[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:50 IST" name="verifyuserloginwithvalidcreditions" finished-at="2025-05-26T19:23:50 IST" duration-ms="6" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method retried="true" signature="verifyuserloginwithvalidcreditions()[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:50:01 IST" name="verifyuserloginwithvalidcreditions" finished-at="2025-05-27T12:50:22 IST" duration-ms="20503" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)]]>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29d32bc7807385648ab34ce893ed97fc, findElement {value=//input[@name='username'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50082/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29d32bc7807385648ab34ce893ed97fc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at utilities.Excelread.readStringData(Excelread.java:20)
-at page.Loginpage.loginusingexcel(Loginpage.java:51)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29d32bc7807385648ab34ce893ed97fc, findElement {value=//input[@name='username'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50082/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29d32bc7807385648ab34ce893ed97fc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at page.Loginpage.loginusingexcel(Loginpage.java:53)
 at testscripts.Logintest.verifyuserloginwithvalidcreditions(Logintest.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -126,23 +156,55 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyuserloginwithvalidcreditions -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@34a3d150]" started-at="2025-05-26T19:23:50 IST" name="driverQuit" finished-at="2025-05-26T19:23:50 IST" duration-ms="357" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:50:22 IST" name="driverQuit" finished-at="2025-05-27T12:50:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyuserloginwithvalidcreditions status=FAILURE method=Logintest.verifyuserloginwithvalidcreditions()[pri:0, instance:testscripts.Logintest@34a3d150] output={null}]]]>
+                <![CDATA[[TestResult name=verifyuserloginwithvalidcreditions status=SKIP method=Logintest.verifyuserloginwithvalidcreditions()[pri:0, instance:testscripts.Logintest@782859e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:50:22 IST" name="initialisebrowser" finished-at="2025-05-27T12:50:28 IST" duration-ms="6380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialisebrowser -->
+        <test-method signature="verifyuserloginwithvalidcreditions()[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:50:28 IST" name="verifyuserloginwithvalidcreditions" finished-at="2025-05-27T12:50:31 IST" duration-ms="2376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyuserloginwithvalidcreditions -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Logintest@782859e]" started-at="2025-05-27T12:50:31 IST" name="driverQuit" finished-at="2025-05-27T12:50:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyuserloginwithvalidcreditions status=SUCCESS method=Logintest.verifyuserloginwithvalidcreditions()[pri:0, instance:testscripts.Logintest@782859e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -150,330 +212,6 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           </reporter-output>
         </test-method> <!-- driverQuit -->
       </class> <!-- testscripts.Logintest -->
-    </test> <!-- test1 -->
-    <test started-at="2025-05-26T19:22:42 IST" name="test2" finished-at="2025-05-26T19:23:59 IST" duration-ms="77632">
-      <class name="testscripts.Categorytest">
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:22:42 IST" name="initialisebrowser" finished-at="2025-05-26T19:22:54 IST" duration-ms="12041" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialisebrowser -->
-        <test-method signature="categorydetailsadding()[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:22:54 IST" name="categorydetailsadding" finished-at="2025-05-26T19:22:54 IST" duration-ms="131" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at utilities.Excelread.readStringData(Excelread.java:20)
-at page.Loginpage.loginusingexcel(Loginpage.java:51)
-at testscripts.Categorytest.categorydetailsadding(Categorytest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- categorydetailsadding -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:22:54 IST" name="driverQuit" finished-at="2025-05-26T19:22:54 IST" duration-ms="499" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=categorydetailsadding status=FAILURE method=Categorytest.categorydetailsadding()[pri:0, instance:testscripts.Categorytest@49438269] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:22:54 IST" name="initialisebrowser" finished-at="2025-05-26T19:23:02 IST" duration-ms="7199" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialisebrowser -->
-        <test-method signature="edit()[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:02 IST" name="edit" finished-at="2025-05-26T19:23:02 IST" duration-ms="11" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at utilities.Excelread.readStringData(Excelread.java:20)
-at page.Loginpage.loginusingexcel(Loginpage.java:51)
-at testscripts.Categorytest.edit(Categorytest.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- edit -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:02 IST" name="driverQuit" finished-at="2025-05-26T19:23:02 IST" duration-ms="351" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=edit status=FAILURE method=Categorytest.edit()[pri:0, instance:testscripts.Categorytest@49438269] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:02 IST" name="initialisebrowser" finished-at="2025-05-26T19:23:25 IST" duration-ms="22879" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialisebrowser -->
-        <test-method signature="elementsearchfornotfoundelement()[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:25 IST" name="elementsearchfornotfoundelement" finished-at="2025-05-26T19:23:25 IST" duration-ms="7" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at utilities.Excelread.readStringData(Excelread.java:20)
-at page.Loginpage.loginusingexcel(Loginpage.java:51)
-at testscripts.Categorytest.elementsearchfornotfoundelement(Categorytest.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- elementsearchfornotfoundelement -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:25 IST" name="driverQuit" finished-at="2025-05-26T19:23:25 IST" duration-ms="369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=elementsearchfornotfoundelement status=FAILURE method=Categorytest.elementsearchfornotfoundelement()[pri:0, instance:testscripts.Categorytest@49438269] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:25 IST" name="initialisebrowser" finished-at="2025-05-26T19:23:43 IST" duration-ms="18184" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialisebrowser -->
-        <test-method signature="elementsearchs()[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:43 IST" name="elementsearchs" finished-at="2025-05-26T19:23:43 IST" duration-ms="11" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at utilities.Excelread.readStringData(Excelread.java:20)
-at page.Loginpage.loginusingexcel(Loginpage.java:51)
-at testscripts.Categorytest.elementsearchs(Categorytest.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- elementsearchs -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:43 IST" name="driverQuit" finished-at="2025-05-26T19:23:44 IST" duration-ms="629" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=elementsearchs status=FAILURE method=Categorytest.elementsearchs()[pri:0, instance:testscripts.Categorytest@49438269] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialisebrowser(java.lang.String)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:44 IST" name="initialisebrowser" finished-at="2025-05-26T19:23:59 IST" duration-ms="14722" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialisebrowser -->
-        <test-method signature="statusediting()[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:59 IST" name="statusediting" finished-at="2025-05-26T19:23:59 IST" duration-ms="6" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\User\git\grocery-application\Mainproject1C:\Users\User\eclipse-workspace\Mainproject1\src\test\resources\7rmart\GroceryApp.xlsx (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at utilities.Excelread.readStringData(Excelread.java:20)
-at page.Loginpage.loginusingexcel(Loginpage.java:51)
-at testscripts.Categorytest.statusediting(Categorytest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- statusediting -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Categorytest@49438269]" started-at="2025-05-26T19:23:59 IST" name="driverQuit" finished-at="2025-05-26T19:23:59 IST" duration-ms="442" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=statusediting status=FAILURE method=Categorytest.statusediting()[pri:0, instance:testscripts.Categorytest@49438269] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscripts.Categorytest -->
-    </test> <!-- test2 -->
-  </suite> <!-- parallel tesing -->
+    </test> <!-- myTest -->
+  </suite> <!-- myTestSuite -->
 </testng-results>
