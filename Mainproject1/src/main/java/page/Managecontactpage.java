@@ -19,7 +19,7 @@ public class Managecontactpage
 	public Managecontactpage(WebDriver driver)
 	{
 	this.driver=driver;
-	PageFactory.initElements(driver,this);//initialise web elements ,pagefactory is  a class
+	PageFactory.initElements(driver,this);
 	}
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/contact/edit_contact?edit=1']")WebElement editbutton;
 	@FindBy(xpath="//input[@id='phone']")WebElement phonefield;
@@ -29,7 +29,7 @@ public class Managecontactpage
 	@FindBy(xpath="//input[@id='del_limit']")WebElement deliverychargelimit ;
 	@FindBy(xpath="//button[@class='btn btn-block-sm btn-info']")WebElement update  ;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
-public void contactupdate()
+public  Managecontactpage contactupdate()
 {
 	editbutton.click();
 
@@ -50,6 +50,7 @@ public void contactupdate()
 	deliverychargelimit.clear();
 	deliverychargelimit.sendKeys("30");
 	general.clickJavaScriptExecutor(update, driver);
+	return this;
 }
 public boolean alertpresent()
 {

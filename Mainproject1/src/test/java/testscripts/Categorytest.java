@@ -14,66 +14,65 @@ import page.Loginpage;
 
 public class Categorytest extends Base
 {
-  @Test
+	Loginpage loginpage;
+	Category categorypage;
+	Homepage homepage;
+	
+  @Test(groups="smoke")
   public void categorydetailsadding() throws AWTException, IOException
   {
-	  Loginpage loginpage=new Loginpage(driver);
-	  loginpage.loginusingexcel();
-	  Homepage homepage=new Homepage(driver);
-	  homepage.clickonmanagecategory();
-	  
-	  Category create=new Category(driver);
-	  create.categoryactions("phones");
-	  boolean categorycreated=create.savealertpresent();
+	   loginpage=new Loginpage(driver);
+	   homepage=loginpage.loginusingexcel();
+	   categorypage=homepage.clickonmanagecategory().categoryactions("phones");
+	 
+	  boolean categorycreated=categorypage.savealertpresent();
 	  Assert.assertTrue(categorycreated,Constants.CATEGORY_CREATION);
   }  
 @Test	  
   public void edit() throws IOException
   {
-	Loginpage loginpage=new Loginpage(driver);
-	  loginpage.loginusingexcel();
-	  Homepage homepage=new Homepage(driver);
-	  homepage.clickonmanagecategory(); 
-	  Category create=new Category(driver);
-	  create.editcategory();
-	 boolean alertpresent=create.imagedeletedalertpresent();
+	 loginpage=new Loginpage(driver);
+	 homepage=loginpage.loginusingexcel();
+	  
+	  categorypage= homepage.clickonmanagecategory().editcategory().update(); 
+	  
+	 boolean alertpresent=categorypage.imagedeletedalertpresent();
 	 Assert.assertTrue(alertpresent,Constants.CATEGORY_EDIT);
-	 create.update();
+	
 	 
   }
 @Test
 public void statusediting() throws IOException
 {
-Loginpage loginpage=new Loginpage(driver);
-loginpage.loginusingexcel();
-Homepage homepage=new Homepage(driver);
-homepage.clickonmanagecategory(); 
-Category create=new Category(driver);
-create.statusedit();
-boolean alertpresent=create.statusapdate();
+ loginpage=new Loginpage(driver);
+ homepage=loginpage.loginusingexcel();
+
+ categorypage=homepage.clickonmanagecategory().statusedit(); 
+
+boolean alertpresent=categorypage.statusapdate();
 Assert.assertTrue(alertpresent,Constants.CATEGORY_STATUSUPDATE);
 }
 @Test
 public void elementsearchs() throws IOException
 {
-	Loginpage loginpage=new Loginpage(driver);
-	loginpage.loginusingexcel();
-	Homepage homepage=new Homepage(driver);
-	homepage.clickonmanagecategory(); 
-	Category create=new Category(driver);
-	boolean present=create.search("toys");
+	 loginpage=new Loginpage(driver);
+	 homepage=loginpage.loginusingexcel();
+	
+	 categorypage=homepage.clickonmanagecategory(); 
+	
+	boolean present=categorypage.search("toys");
 	Assert.assertTrue(present,Constants.CATEGORY_SEARCH);
 	
 }
 @Test
 public void elementsearchfornotfoundelement() throws IOException
 {
-	Loginpage loginpage=new Loginpage(driver);
-	loginpage.loginusingexcel();
-	Homepage homepage=new Homepage(driver);
-	homepage.clickonmanagecategory(); 
-	Category create=new Category(driver);
-	boolean present=create.search("lipstick");
+	 loginpage=new Loginpage(driver);
+	 homepage=loginpage.loginusingexcel();
+	
+	 categorypage=homepage.clickonmanagecategory(); 
+	
+	boolean present= categorypage.search("lipstick");
 	Assert.assertFalse(false,Constants.CATEGORY_NOTELEMENTSEARCH);
 	
 }

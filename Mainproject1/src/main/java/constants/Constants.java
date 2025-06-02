@@ -26,4 +26,3 @@ public class Constants //to give path
 	public static final String LOGINEXCELFILEPATH=System.getProperty("user.dir")+"\\src\\test\\resources\\7rmart\\GroceryApp.xlsx";
 }
 
-//user.dir used to give path up to get grocrry application.

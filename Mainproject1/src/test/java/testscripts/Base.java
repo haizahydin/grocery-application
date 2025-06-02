@@ -30,10 +30,9 @@ public class Base {
 	
 public void initialisebrowser(String browser) throws Exception 
 {
-		prop=new Properties();//creates a new instance ofthe properties class injava.prop is a variable name referencing the new properties object
-		fs=new FileInputStream(Constants.CONFIGFILE);//object creation of fileinputstream used to read bytes from file and passes static variable inthe constand class that holds the path to configure file.ex-config properties
-		
-		prop.load(fs);//loading configuration or property data from a file using in the fs module
+		prop=new Properties();
+		fs=new FileInputStream(Constants.CONFIGFILE);
+		prop.load(fs);
 		if(browser.equalsIgnoreCase("Chrome"))
 		{
 			driver=new ChromeDriver();
@@ -62,9 +61,9 @@ public void initialisebrowser(String browser) throws Exception
 	
 	
 		 @AfterMethod(alwaysRun=true) 
-		 	public void driverQuit(ITestResult itestresult) throws IOException //ITestResult is a interface and instance object is created
+		 	public void driverQuit(ITestResult itestresult) throws IOException 
 		 	{ 
-		 		if(itestresult.getStatus()==ITestResult.FAILURE) //if we want pass scrnshot then .pass
+		 		if(itestresult.getStatus()==ITestResult.FAILURE)
 		 		{ 
 		 			Screenshotutility screenshot=new Screenshotutility(); 
 		 			screenshot.getScreenshot(driver,itestresult.getName()); 

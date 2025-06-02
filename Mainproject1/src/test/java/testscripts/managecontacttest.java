@@ -12,16 +12,19 @@ import page.Managecontactpage;
 import page.Managefoottexterpage;
 
 public class managecontacttest extends Base {
+	Loginpage loginpage;
+	Homepage homepage;
+	 Managecontactpage managecontactpage;
   @Test
-  public void contact() throws IOException
+  public void managecontactupdate() throws IOException
   {
-	  Loginpage loginpage=new Loginpage(driver);
-		loginpage.loginusingexcel();
-		Homepage homepage=new Homepage(driver);
-		homepage.clickmanagecontact(); 
-		 Managecontactpage contact=new  Managecontactpage(driver);
-		 contact.contactupdate();
-		boolean alertpresent= contact.alertpresent();
+	   loginpage=new Loginpage(driver);
+	   homepage=loginpage.loginusingexcel();
+		
+	   managecontactpage=homepage.clickmanagecontact().contactupdate();
+		
+		 
+		boolean alertpresent= managecontactpage.alertpresent();
 		Assert.assertTrue(alertpresent,Constants.MANAGECONTACT);
   }
 }

@@ -14,16 +14,16 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshotutility {
 	public void getScreenshot(WebDriver driver, String failedtestcase) throws IOException { 
-	 		TakesScreenshot scrShot = (TakesScreenshot) driver; //interface and its object is created  
-	 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE); //scnshot captured stored in a temp path   
+	 		TakesScreenshot scrShot = (TakesScreenshot) driver;  
+	 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);    
 	 		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());   
-	 		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot"); //file create in maven   
+	 		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot");   
 	 		if (!f1.exists()) { 
-	 			f1.mkdirs();    //mkdir --> will create folder using java 
+	 			f1.mkdirs();    
 	 		} 
 	 		String destination = System.getProperty("user.dir") + "//outputScreenShot//" + failedtestcase + timeStamp 
 	 				+ ".png"; //
-	 		File finalDestination = new File(destination); //destination variable change in to file
-	 		FileHandler.copy(screenShot, finalDestination);	//scnshot copied into finaldestination
+	 		File finalDestination = new File(destination); 
+	 		FileHandler.copy(screenShot, finalDestination);	
 	}
 }

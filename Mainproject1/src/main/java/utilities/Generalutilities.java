@@ -75,6 +75,28 @@ public class Generalutilities {
 			Actions action=new Actions(driver);
 			action.dragAndDrop(sourseelement, targetelement).perform();
 		}
+		public void alerthandlingsinglealert(WebElement clickbut,WebDriver driver)
+		{
+			
+			
+			clickbut.click();
+			driver.switchTo().alert().accept();
+		}
+		public void alerthandlingconfrmtionalert(WebElement clicksec,WebDriver driver)
+		{	
+			clicksec.click();
+			String alerttext=driver.switchTo().alert().getText();
+			System.out.println(alerttext);
+			driver.switchTo().alert().dismiss();
+		}
+		public void alerthandlingpromtalert(WebElement clickprompt,WebDriver driver,String value)
+		{
+			
+			clickprompt.click();
+			driver.switchTo().alert().sendKeys("value");
+			driver.switchTo().alert().accept();
+			
+			}
 		
 		
 		}

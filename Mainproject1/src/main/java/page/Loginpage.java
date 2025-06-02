@@ -17,9 +17,9 @@ public class Loginpage
 	public Loginpage(WebDriver driver)
 	{
 	this.driver=driver;
-	PageFactory.initElements(driver,this);//initialise web elements ,pagefactory is  a class
+	PageFactory.initElements(driver,this);
 	}
-	@FindBy(xpath="//input[@name='username']")WebElement usernamefield;//declaration of web elements
+	@FindBy(xpath="//input[@name='username']")WebElement usernamefield;
 	@FindBy(xpath="//input[@name='password']")WebElement passwordfield;
 	@FindBy(xpath="//button[@class='btn btn-dark btn-block']")WebElement loginbutton;
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alert;
@@ -33,9 +33,10 @@ public void enterpasswordonpasswordfield(String password)
 	passwordfield.sendKeys(password);
 	
 }
-public void clickonloginbutton()
+public Homepage clickonloginbutton()
 {
 	loginbutton.click();
+	return new Homepage(driver);
 }
 public boolean ishomepageloaded()
 {
@@ -46,13 +47,13 @@ public boolean isalertpresent()
 	return alert.isDisplayed();
 
 }
-public void loginusingexcel() throws IOException
+public Homepage loginusingexcel() throws IOException
 {
 	String username=Excelread.readStringData(1,0,"loginpage");
 	String password=Excelread.readStringData(1,1,"loginpage");
 	usernamefield.sendKeys(username);
 	passwordfield.sendKeys(password);
 	loginbutton.click();
-	
+	return new Homepage(driver);
 }
 }

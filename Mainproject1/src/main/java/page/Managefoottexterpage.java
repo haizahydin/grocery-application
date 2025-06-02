@@ -14,7 +14,7 @@ public class Managefoottexterpage {
 	public Managefoottexterpage(WebDriver driver)
 	{
 	this.driver=driver;
-	PageFactory.initElements(driver,this);//initialise web elements ,pagefactory is  a class
+	PageFactory.initElements(driver,this);
 	}
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Footertext/edit?edit=1']")WebElement edit;
 	@FindBy(xpath="//textarea[@placeholder='Enter the Address']")WebElement address ;
@@ -23,7 +23,7 @@ public class Managefoottexterpage {
 	@FindBy(xpath="//button[@class='btn btn-block-sm btn-info']")WebElement  update;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert ;
 
-public void foottexter()
+public Managefoottexterpage managefootpageinfrmtnupdate()
 {
 	edit.click();
 	address.clear();
@@ -33,6 +33,7 @@ public void foottexter()
 	phone.clear();
 	phone.sendKeys("6546146");
 	update.click();
+	return this;
 	
 	
 }

@@ -15,41 +15,43 @@ public class Managenewspage
 			public Managenewspage (WebDriver driver)
 			{
 			this.driver=driver;
-			PageFactory.initElements(driver,this);//initialise web elements ,pagefactory is  a class
+			PageFactory.initElements(driver,this);
 			}
-			@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/news/edit?edit=5026&page_ad=1']")WebElement edit  ;
+			@FindBy(xpath="//i[@class='fas fa-edit']")WebElement edit  ;
 			@FindBy(xpath="//textarea[@id='news']")WebElement newsfield ;
 			@FindBy(xpath="//button[@class='btn btn-danger']")WebElement update;
 			@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
-			@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/news/delete?del=5024&page_ad=1']")WebElement deletebutton;
+			@FindBy(xpath="//i[@class='fas fa-trash-alt']")WebElement deletebutton;
 			@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertafterdelete;
 			@FindBy(xpath="//a[@href='javascript:void(0)']")WebElement search;
 			@FindBy(xpath="//input[@placeholder='Title']")WebElement title;
 			@FindBy(xpath="//button[@type='submit']")WebElement searchafter;
 			@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]")List<WebElement> name;
 			
-public void managenews()
+public Managenewspage  managenewseditandupdate()
 {
 	edit.click();
 	newsfield.clear();
-	newsfield.sendKeys("newscentre");
+	newsfield.sendKeys("new product launch");
 	update.click();
+	return this;
 	
 }
 public boolean alertpresent()
 {
 return alert.isDisplayed();
 }
-public void delete()
+public  Managenewspage managenewsdelete()
 {
 	deletebutton.click();
 	driver.switchTo().alert().accept();
+	return this;
 }
 public boolean alertpresentafterdelete()
 {
 	return alertafterdelete.isDisplayed();
 }
-public boolean searchnews(String input)
+public boolean managenewssearchnews(String input)
 {
 	search.click();
 	title.clear();

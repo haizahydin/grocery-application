@@ -10,16 +10,20 @@ import page.Homepage;
 import page.Loginpage;
 import page.Managefoottexterpage;
 
-public class Foottexttest extends Base{
+public class Managefoottexttest extends Base
+{
+	Loginpage loginpage;
+	Homepage homepage;
+	Managefoottexterpage managefoottextpage;
+	
   @Test
   public void foottext() throws IOException {
-	  Loginpage loginpage=new Loginpage(driver);
-		loginpage.loginusingexcel();
-		Homepage homepage=new Homepage(driver);
-		homepage.footexter(); 
-		 Managefoottexterpage foottext=new Managefoottexterpage(driver);
-		 foottext.foottexter();
-		boolean alertpresent= foottext.alert();
+	   loginpage=new Loginpage(driver);
+	   homepage=loginpage.loginusingexcel();
+		
+	   managefoottextpage=homepage.footexter().managefootpageinfrmtnupdate();
+		
+		boolean alertpresent= managefoottextpage.alert();
 		 Assert.assertTrue(alertpresent,Constants.FOOTTEXT_FOOTTEXTALERT);
   }
 }

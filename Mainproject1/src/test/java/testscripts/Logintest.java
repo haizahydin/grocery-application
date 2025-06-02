@@ -7,30 +7,33 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import constants.Constants;
+import page.Homepage;
 import page.Loginpage;
 
 public class Logintest extends Base {
-  @Test
+	Loginpage login;
+	 Homepage homepage;
+ @Test
   public void verifyuserloginwithvalidcreditions() throws IOException
   {
 	  
   
-  Loginpage login=new Loginpage(driver);
+   login=new Loginpage(driver);
   /*login.enterusernameonusernamefield("admin");
   login.enterpasswordonpasswordfield("admin");
   login.clickonloginbutton();*/
-  login.loginusingexcel();
+   homepage=login.loginusingexcel();
   boolean ishomepagelogin=login.ishomepageloaded();
   Assert.assertTrue(ishomepagelogin,Constants.VERIFYLOGINWITHVALIDCREDENTIOL);
   }
  
   
  
-  @Test
+@Test
   public void invalidpasswordcrctusername()
   {
-	  Loginpage login=new Loginpage(driver);
-	  login.enterpasswordonpasswordfield("karol");
+	   login=new Loginpage(driver);
+	 login.enterpasswordonpasswordfield("karol");
 	  login.enterusernameonusernamefield("admin");
 	  login.clickonloginbutton();
 	  boolean alertpresent=login.isalertpresent();
@@ -47,16 +50,23 @@ public class Logintest extends Base {
 	  boolean alertpresnt=login.isalertpresent();
 	  Assert.assertTrue(alertpresnt, "notlogin"); 
   }
- @Test
- public void validincrctpassincrtusername()
+
+ @Test(dataProvider="incorrectmethod")
+ public void invalidpassanduser(String username,String password)
  {
-	  Loginpage login=new Loginpage(driver);
-	  login.enterusernameonusernamefield("anknk");
-	  login.enterpasswordonpasswordfield("jbjnk");
-	  login.clickonloginbutton();
-	  boolean alertpresnt=login.isalertpresent();
-	  Assert.assertTrue(alertpresnt, "notlogin"); 
- }
+ Loginpage login=new Loginpage(driver);
+ login.enterpasswordonpasswordfield(password);
+ login.enterusernameonusernamefield(username);
+ login.clickonloginbutton();
+ boolean alertpresent=login.isalertpresent();
+ Assert.assertTrue(alertpresent, "notlogin");
 }
+ @DataProvider
+ public Object[][] incorrectmethod()
+ {
+	  return new Object[][]
+			  {{"bunjn","ghbjb"},{"guhn","guh"},{"hbjn","bbjnj"},{"bnnk","bhn"}};
+ }}
+
 
 

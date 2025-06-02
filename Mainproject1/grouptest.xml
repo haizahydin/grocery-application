@@ -1,0 +1,13 @@
+<suite name="myTestSuite">
+<parameter name="browser" value="Chrome"></parameter>
+	<test name="myTest">
+		 <groups>
+			<run>
+				<include name="smoke"></include>                
+			</run>
+		</groups> 
+		<classes>
+			<class name="testscripts.Categorytest"></class>
+		</classes>
+	</test>
+</suite>

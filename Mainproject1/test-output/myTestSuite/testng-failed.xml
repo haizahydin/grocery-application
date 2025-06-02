@@ -8,13 +8,14 @@
   </listeners>
   <test thread-count="5" name="myTest(failed)">
     <classes>
-      <class name="testscripts.Logintest">
+      <class name="testscripts.Managenews">
         <methods>
-          <include name="verifyuserloginwithvalidcreditions"/>
+          <include name="managenews"/>
+          <include name="managenewsdelete"/>
           <include name="initialisebrowser"/>
           <include name="driverQuit"/>
         </methods>
-      </class> <!-- testscripts.Logintest -->
+      </class> <!-- testscripts.Managenews -->
     </classes>
   </test> <!-- myTest(failed) -->
 </suite> <!-- Failed suite [myTestSuite] -->

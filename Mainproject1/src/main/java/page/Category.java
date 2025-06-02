@@ -46,7 +46,7 @@ Generalutilities general=new Generalutilities();
 	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]")List<WebElement> name;
 	
 
-public void categoryactions(String categoryname) throws AWTException
+public  Category categoryactions(String categoryname) throws AWTException
 {
 	newbutton.click();
 	categoryfield.sendKeys(categoryname+general.generateCurrentDateAndTime());
@@ -54,35 +54,36 @@ public void categoryactions(String categoryname) throws AWTException
 	String filepath=Constants.CATEGORY_IMAGE;
 obj.fileuploadingusingsend(filechoosing,filepath);
 
-//showontop.click();
-//showonleft.click();
-//general.scrollbyverticala(driver);
-general.clickJavaScriptExecutor(save, driver);
 
+general.clickJavaScriptExecutor(save, driver);
+return this;
 }
 public boolean savealertpresent()
 {
 	return aleret.isDisplayed();
 }
-public void editcategory()
+public  Category editcategory()
 {
 edit.click();
 delete.click();
+general.alerthandlingsinglealert(delete, driver);
 driver.switchTo().alert().accept();
-
+return this;
 
 }
 public boolean imagedeletedalertpresent()
 {
 	return deletealertpresent.isDisplayed();
 }
-public void update()
+public Category update()
 {
 general.clickJavaScriptExecutor(update, driver);
+return this;
 }
-public void statusedit()
+public  Category statusedit()
 {
 	status.click();	
+	return this;
 }
 public boolean statusapdate()
 {
@@ -99,14 +100,14 @@ public boolean search(String input)
 
 		
 	
-			//String input=a;
+			
 			
 			int flag=0;
 			for(WebElement names:name)
 			{
 				if(names.getText().equalsIgnoreCase(input));
 				{
-					//System.out.println(names.getText());
+					
 					flag=1;
 					
 					break;
