@@ -22,7 +22,7 @@ public class Waitutilities
 	public void waituntilelementisvisible(WebDriver driver,WebElement element)
 	{
 		
-		WebDriverWait obj=new WebDriverWait(driver,Duration.ofSeconds(explicitwaitduration)); //object creation
+		WebDriverWait obj=new WebDriverWait(driver,Duration.ofSeconds(explicitwaitduration)); 
 		
 		obj.until(ExpectedConditions.visibilityOf(element)); 
 	}
@@ -55,7 +55,7 @@ public class Waitutilities
 	{
 		FluentWait<WebDriver>wait=new FluentWait<>(driver)
 				.withTimeout(Duration.ofSeconds(fluentwaitduration))
-		.pollingEvery(Duration.ofSeconds(fluentintervel))//condition check every 5sec
+		.pollingEvery(Duration.ofSeconds(fluentintervel))
 		.ignoring(NoSuchElementException.class);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}

@@ -29,7 +29,7 @@ public class Categorytest extends Base
 	  Assert.assertTrue(categorycreated,Constants.CATEGORY_CREATION);
   }  
 @Test	  
-  public void edit() throws IOException
+  public void editcategorydetails() throws IOException
   {
 	 loginpage=new Loginpage(driver);
 	 homepage=loginpage.loginusingexcel();
@@ -53,7 +53,7 @@ boolean alertpresent=categorypage.statusapdate();
 Assert.assertTrue(alertpresent,Constants.CATEGORY_STATUSUPDATE);
 }
 @Test
-public void elementsearchs() throws IOException
+public void elementsearchsincategory() throws IOException
 {
 	 loginpage=new Loginpage(driver);
 	 homepage=loginpage.loginusingexcel();
